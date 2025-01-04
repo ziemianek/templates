@@ -63,4 +63,3 @@ else
 fi
 
 log "Virtual environment setup completed successfully."
-log "Run ''source $VENV_NAME/bin/activate'' to activate the virtual environment."
