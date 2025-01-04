@@ -1,0 +1,6 @@
+---
+- name: Example Ansible Playbook
+  hosts: DeployHost
+  gather_facts: false
+  roles:
+    - example
