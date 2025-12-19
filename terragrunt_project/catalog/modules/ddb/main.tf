@@ -1,14 +1,14 @@
-resource "aws_dynamodb_table" "asset_metadata" {
-  name         = "${var.name}-asset-metadata"
+resource "aws_dynamodb_table" "products" {
+  name         = "${var.name}-products-${var.env_type}"
   billing_mode = "PAY_PER_REQUEST"
-  hash_key     = "image_id"
+  hash_key     = "product_id"
 
   attribute {
-    name = "image_id"
+    name = "product_id"
     type = "S"
   }
 
   tags = {
-    Name = "${var.name}-asset-metadata"
+    Name = "${var.name}-products-${var.env_type}"
   }
 }
